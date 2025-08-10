@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Grid from '../components/ui/Grid.astro'
+import { getPath } from '../lib/path'
 
 const title = "Projects"
 
@@ -10,7 +11,7 @@ const currentProjects = {
         {
             title: "HiFlOWS",
             description: "High-order numerical methods for Flow simulations in Weather and Sustainability",
-            link: "/steiner_lab/projects/hiflows"
+            link: getPath('/projects/hiflows')
         },
         {
             title: "Project 2",
