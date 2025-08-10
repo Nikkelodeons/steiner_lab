@@ -30,7 +30,13 @@ const {
 
 		<Head title={title} description={description} image={image} />
 
-
+		<script is:inline>
+			// Set dark theme by default if no theme is set
+			if (!localStorage.getItem('theme')) {
+				localStorage.setItem('theme', 'dark');
+				document.documentElement.setAttribute('data-theme', 'dark');
+			}
+		</script>
 
 	</head>
 	<body>
@@ -89,6 +95,19 @@ const {
 		</div>
 	</body>
 </html>
+
+<style>
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--my-color: #252b30;
+		}
+	}
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
 
 <style>
 	@media (prefers-color-scheme: dark) {

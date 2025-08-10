@@ -1,8 +1,8 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: 'Steiner Lab',
 	title: '',
 	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	author_name: 'Steiner Lab', // Author name to be highlighted in the papers section
 	research_areas: [
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
@@ -24,15 +24,15 @@ export const template = {
 	website_url: 'https://localhost:4321', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
-	lightTheme: 'light', // Select one of the Daisy UI Themes or create your own
-	darkTheme: 'dark', // Select one of the Daisy UI Themes or create your own
+	lightTheme: 'dark', // Using dark theme as default
+	darkTheme: 'dark', // Using dark theme for both light and dark modes
 	excerptLength: 200,
 	postPerPage: 5,
     base: '' // Repository name starting with /
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: 'Steiner Lab',
+	default_description: '<Insert description>',
 	default_image: '/images/astro-academia.png',
 }
