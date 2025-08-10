@@ -1,3 +1,16 @@
+export const template = {
+	export const template = {
+	website_url: 'https://nikkelodeons.github.io', // Astro needs to know your site's deployed URL to generate a sitemap. It must start with http:// or https://
+	menu_left: false,
+	transitions: true,
+	lightTheme: 'dark', // Using dark theme as default
+	darkTheme: 'dark', // Using dark theme for both light and dark modes
+	excerptLength: 200,
+	postPerPage: 5,
+    base: '/steiner_lab' // Repository name starting with /rl: 'https://nikkelodeons.github.io',
+	base: '/steiner_lab',
+}
+
 export const profile = {
 	fullName: 'Steiner Lab',
 	title: '',
